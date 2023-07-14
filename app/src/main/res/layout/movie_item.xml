@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="134dp"
+            android:layout_height="200dp"
+            android:src="@drawable/popular"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txtTitel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello Movie"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hello Desc"
+                android:textSize="14dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+<!--<LinearLayout-->
+<!--android:layout_height="wrap_content">-->
+
+<!--<ImageView-->
+<!--    android:id="@+id/imgPoster"-->
+<!--    android:layout_width="135dp"-->
+<!--    android:src="@drawable/popular"-->
+<!--    android:layout_height="200dp" />-->
+
+<!--</LinearLayout>-->
+<!--    android:layout_width="match_parent"-->
+
+<!--<LinearLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_margin="10dp"-->
+<!--android:orientation="vertical">-->
+
+<!--<TextView-->
+<!--    android:id="@+id/txtTitel"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="hiiii"-->
+<!--    android:textSize="25dp"-->
+<!--    android:textStyle="bold" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/txtDescription"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:text="hiiii"-->
+<!--    android:textSize="13dp"-->
+<!--    android:gravity="center_vertical"-->
+<!--    android:textStyle="bold" />-->
+
+<!--</LinearLayout>-->
