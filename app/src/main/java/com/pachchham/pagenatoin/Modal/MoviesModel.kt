@@ -2,7 +2,7 @@ package com.pachchham.pagenatoin.Modal
 
 import com.google.gson.annotations.SerializedName
 
-data class PopularMovieModel(
+data class MovieModel(
 
 	@field:SerializedName("page")
 	val page: Int? = null,
