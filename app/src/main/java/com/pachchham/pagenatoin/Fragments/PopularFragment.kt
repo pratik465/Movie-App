@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.pachchham.pagenatoin.Adapter.MoviesAdapter
 import com.pachchham.pagenatoin.Client.ApiClient
 import com.pachchham.pagenatoin.Interface.ApiInterface
-import com.pachchham.pagenatoin.Interface.ApiInterface2
 import com.pachchham.pagenatoin.Modal.MovieModel
 import com.pachchham.pagenatoin.Modal.ResultsItem
 import com.pachchham.pagenatoin.databinding.FragmentPopularBinding

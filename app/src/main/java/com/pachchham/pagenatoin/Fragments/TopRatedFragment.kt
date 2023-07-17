@@ -10,10 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.pachchham.pagenatoin.Adapter.MoviesAdapter
 import com.pachchham.pagenatoin.Client.ApiClient
 import com.pachchham.pagenatoin.Interface.ApiInterface
-import com.pachchham.pagenatoin.Interface.ApiInterface3
 import com.pachchham.pagenatoin.Modal.MovieModel
 import com.pachchham.pagenatoin.Modal.ResultsItem
-import com.pachchham.pagenatoin.databinding.FragmentPopularBinding
 import com.pachchham.pagenatoin.databinding.FragmentTopRatedBinding
 import retrofit2.Call
 import retrofit2.Callback
@@ -46,7 +44,7 @@ class TopRatedFragment : Fragment() {
     }
 
     private fun callApi(page: Int) {
-        var api = ApiClient.getApiClient().create(ApiInterface3::class.java)
+        var api = ApiClient.getApiClient().create(ApiInterface::class.java)
         api.getTpoRated(this.page).enqueue(object : Callback<MovieModel> {
             override fun onResponse(call: Call<MovieModel>, response: Response<MovieModel>) {
 

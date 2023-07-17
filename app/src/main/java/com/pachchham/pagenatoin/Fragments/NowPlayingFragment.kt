@@ -9,7 +9,7 @@ import androidx.core.widget.NestedScrollView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pachchham.pagenatoin.Adapter.MoviesAdapter
 import com.pachchham.pagenatoin.Client.ApiClient
-import com.pachchham.pagenatoin.Interface.ApiInterface2
+import com.pachchham.pagenatoin.Interface.ApiInterface
 import com.pachchham.pagenatoin.Modal.MovieModel
 import com.pachchham.pagenatoin.Modal.ResultsItem
 import com.pachchham.pagenatoin.databinding.FragmentNowPlayingBinding
@@ -45,7 +45,7 @@ class NowPlayingFragment : Fragment() {
     }
 
     private fun callApi(page: Int) {
-        var api = ApiClient.getApiClient().create(ApiInterface2::class.java)
+        var api = ApiClient.getApiClient().create(ApiInterface::class.java)
         api.getNowPlaying(this.page).enqueue(object : Callback<MovieModel> {
             override fun onResponse(call: Call<MovieModel>, response: Response<MovieModel>) {
 
